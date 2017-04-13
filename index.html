@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!--
+ __  __            _  __
+|  \/  | __ _ _ __| |/ /_ __ _   _
+| |\/| |/ _` | '__| ' /| '__| | | |
+| |  | | (_| | |  | . \| |  | |_| |
+|_|  |_|\__,_|_|  |_|\_\_|   \__, |
+                             |___/
+
+MIT License (https://opensource.org/licenses/MIT)
+-->
+
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="A Dropshare landing page"> <!-- You can change this to fit your use case better -->
+        <meta name="author" content="MarKry"> <!-- You can change this too if you want -->
+        <link rel="icon" href=""> <!--change the icon that shows in the browser's navigation bar-->
+        
+        <title>White - A Dropshare landing page</title> <!-- Change this to reflect you or your company -->
+        
+        <!-- uikit core css -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.21/css/uikit.min.css" rel="stylesheet">
+
+        <!-- google fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700|Nunito|Quicksand" rel="stylesheet">
+        
+        <!-- font awesome css for the icons -->
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    </head>
+    
+    <body>
+        <div class="uk-position-center">
+            <div class="uk-animation-slide-bottom">
+                <div class="uk-card uk-card-default uk-card-body uk-border-rounded">
+                    <div class="uk-card-header">
+                        <h3 class="uk-card-title uk-margin-remove-bottom" style="font-family: 'Quicksand', sans-serif;">__FILENAME__</h3>
+                        <p class="uk-text-meta uk-margin-remove-top" style="font-family: 'Inconsolata', monospace;">__FILESIZE__</p>
+                    </div>
+                    <div class="uk-card-body">
+                        <p class="uk-text-left" style="font-family: 'Nunito', sans-serif;">Shared on __SHAREDATE__ by <button class="uk-button uk-button-text" type="button">Johnny Appleseed<!-- Change this with your name --></button></p>
+                        <div uk-dropdown="pos: bottom-right; mode: click">
+                            <ul class="uk-nav uk-dropdown-nav">
+                                <!-- Cantact information about 'the one who shares'. You can add Facebook and everything else-->
+                                <li class="uk-active" style="font-family: 'Nunito', sans-serif;">Contact</a></li>
+                                <li><a href="https://twitter.com/username" style="font-family: 'Nunito', sans-serif;">Twitter</a></li> <!-- Change username with your twitter username -->
+                                <li><a href="mailto:example@domain.tld" style="font-family: 'Nunito', sans-serif;">Email</a></li> <!-- Change example@domain.tld with your email -->
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="uk-card-footer">
+                        <a href="__PATH__"><i class="fa fa-download fa-2x" aria-hidden="true" title="Download" uk-tooltip></i></a>
+                        <a class="uk-padding-small" href="#img-preview" uk-toggle><i class="fa fa-picture-o fa-2x" aria-hidden="true" title="Image Preview" uk-tooltip></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="img-preview" uk-modal="center: true">
+            <div class="uk-modal-dialog">
+                <button class="uk-modal-close-outside" type="button" uk-close></button>
+                <img src="__PREVIEWURL__" alt="preview unavailable">
+            </div>
+        </div>
+
+        <div class="uk-position-bottom">
+            <div class="uk-card uk-card-body uk-padding-small uk-card-hover uk-text-small uk-text-center" style="z-index: 1; font-family: 'Inconsolata', monospace; font-size: 12px; ">page build with <a class="uk-link-muted" href="https://getuikit.com">uikit</a>, <a class="uk-link-muted" href="http://fontawesome.io/">font awesome</a> and <a class="uk-link-muted" href="https://fonts.google.com/">google fonts</a></div>
+        </div>
+
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+        <!-- uikit core js -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.21/js/uikit.min.js"></script>
+    </body>
+
+</html>
